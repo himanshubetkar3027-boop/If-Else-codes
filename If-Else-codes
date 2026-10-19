@@ -1,0 +1,59 @@
+//check whether leap year
+
+
+#include <stdio.h>
+
+int main()
+{
+    int year;
+
+    printf("Enter a year: ");
+    scanf("%d", &year);
+
+    if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
+        printf("Leap year");
+    else
+        printf("Not a leap year");
+
+    return 0;
+}
+
+//check divisibility
+
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    if (b == 0)
+        printf("Division by zero is not allowed");
+    else if (a % b == 0)
+        printf("Number is divisible");
+    else
+        printf("Number is not divisible");
+
+    return 0;
+}
+
+//Check Wheather Positive or Negative
+
+#include <stdio.h>
+
+int main()
+{
+    int n;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    if (n >= 0)
+        printf("Positive number");
+    else
+        printf("Negative number");
+
+    return 0;
+}
